@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        nav {
+  text-align:center;
+  width: 100%;
+  background: #bebebe;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  position:relative;
+}
+
+nav ul {
+  background: #bebebe;
+  list-style:none;
+  padding:0 20px;
+  margin: 0;
+  height: 60px;
+
+}
+
+
+nav ul li {
+  display: inline-block;
+}
+
+
+nav ul li a {
+  color:#333333;
+  display:block;
+  padding:0px 40px;
+  text-decoration:none;
+  float: left;
+  height: 60px;
+   line-height: 60px;
+}
+
+nav ul li:hover {
+  background: #333333;
+}
+
+
+nav ul li:hover > a{
+    color:#FFFFFF;
+}
+
+nav ul li:hover > ul {
+  display:block;
+}
+
+nav ul ul {
+  background: #BEBEBE;
+  padding:0;
+  text-align: center;
+  display:none;
+    width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+
+    #formulari-contacte {font: 1em Georgia, "Times New Roman", Times, serif; width: 300px; margin: 30px auto;}
+#formulari-contacte label, input[type="submit"] {display: block; margin: 6px 0;}
+    </style>
+</head>
+<body>
+        <nav>
+                <ul>
+                    <li><a href="Principal.html">Home</a></li>
+                    <li><a href="Formulario.html">Formulario</a>
+                    <li><a href="Imágenes.html">Imagenes</a>
+                    <li><a href="Tablas.html">Tablas</a>
+                    <li><a href="Video.html">Video</a>
+
+
+                </ul>
+            </nav>
+    <form id="formulari-contacte" action="script.php" method="post">
+  
+        <label for="nombre">Nombre</label>
+        <input type="number" name="nombre" id="nombre" value="">
+        
+        <label for="data">Fecha corta</label>
+        <input type="date" name="data" id="data" value="">
+        
+        <label for="data">Fecha larga</label>
+        <input type="month" name="data" id="data" value="">
+        
+        <label for="color">Escoja un color</label>
+        <input type="color" name="color" id="color" value="">
+        
+        <label for="cerca">Oficio</label>
+        <input type="search" name="cerca" id="cerca” value="">
+                                                             
+        <label for="telefon">Telefono</label>
+        <input type="tel" name="telefon" id="telefon" value="">
+      
+        <label for="correu">Correo</label>
+        <input type="email" name="telefon” id="telefon" value="">
+      
+        <label for="blog">Blog</label>
+        <input type="url" name="blog" id="blog" value="">
+                                                           
+        <label for="localitat">Donde vive</label>
+        <input type="text" list="localitat">
+            <datalist id="localitat">
+                <option label="Medellin" value="Medellin">
+                <option label="Bello" value="Bello">
+                <option label="Envigado" value="Envigado">
+            </datalist>
+        
+        <label for="blog">Si tiene URL del blog dejo aca</label>
+        <input type="url" name="blog" id="blog" value="" placeholder="http://example.com">
+        
+        <input type="submit" value="Envia">
+                                                          
+      </form>
+      
+        
+        
+      </form>
+</body>
+</html>
